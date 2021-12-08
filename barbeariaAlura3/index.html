@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./produtos.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./formulario.css">
     <title>contatos</title>
 </head>
 <body>
@@ -27,15 +28,42 @@
     </header>
 
     <main>
-        <form action="">
+        <form>
             <label for="nomesobrenome"> Nome e Sobrenome</label>
-            <input type="text" id="nomesobrenome">
+            <input class="input-padrao" type="text" id="nomesobrenome">
 
             <label for="email">Email</label>
-            <input type="email" id="email">
+            <input class="input-padrao" type="email" id="email">
 
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone">
+            <input class="input-padrao" type="tel" id="telefone">
+
+            <label for="mansagem">Menssagem</label>
+            <textarea class="input-padrao" name="" id="mensagem" cols="30" rows="10"></textarea>
+            <div>
+                <p>Como prefere nosso contato</p>
+    
+                <label for="radio-email">
+                    <input type="radio" name="contato" value="email" id="radio-email">                    
+                    Email
+                </label>
+    
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone
+                </label>
+    
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    Whatsapp
+                </label>
+            </div>
+
+            <label class="checkbox" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                Gostaria de receber nossas novidade por email?
+            </label>
+
 
             <input type="submit" value="Envia formulario">
         </form>
